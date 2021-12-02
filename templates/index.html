@@ -17,7 +17,11 @@
   <body>
     <h1>Hello, world!</h1>
 
-    <button type="button" class="btn btn-primary">Primary</button>
+    <!-- Botones principales -->
+    <a class="btn btn-primary" href="{{ url_for('index') }}">Inicio</a>
+    <a class="btn btn-primary" href="{{ url_for('about_me') }}">Acerca de mi</a>
+    <a class="btn btn-primary" href="{{ url_for('projects') }}">Proyectos</a>
+    <a class="btn btn-primary" href="{{ url_for('contact') }}">Contacto</a>
 
     <!-- JavaScript para varias funcionalidades-->
     <!-- jQuery primero, luego Popper.js y Bootstrap JS -->
