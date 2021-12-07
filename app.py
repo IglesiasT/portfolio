@@ -18,5 +18,9 @@ def contact():
 def projects():
     return render_template("projects.html")
 
+def pagina_no_encontrada():
+    return render_template("404.html"), 404
+
 if __name__ == "__main__":
+    app.register_error_handler(404, pagina_no_encontrada) #recibe el codigo del error y la funcion que lo maneja
     app.run(debug=True)
