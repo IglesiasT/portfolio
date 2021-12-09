@@ -17,14 +17,20 @@
 </head>
 
 <body>
-  <!-- Botones principales -->
-  <div class="buttons">
-    <a class="btn btn-primary" href="{{ url_for('download') }}">Download resume</a>
-    <a class="btn btn-primary" href="{{ url_for('index') }}">Home</a>
-    <a class="btn btn-primary" href="{{ url_for('about_me') }}">About me</a>
-    <a class="btn btn-primary" href="{{ url_for('projects') }}">Projects</a>
-    <a class="btn btn-primary" href="{{ url_for('contact') }}">Contact</a>
-  </div>
+  <!-- Barra de navegacion con botones principales -->
+  <header>
+    <nav>
+      <div class="buttons">
+        <ul>
+          <li><a class="btn btn-primary" href="{{ url_for('download') }}">Download resume</a></li>
+          <li><a class="btn btn-primary" href="{{ url_for('index') }}">Home</a></li>
+          <li><a class="btn btn-primary" href="{{ url_for('about_me') }}">About me</a></li>
+          <li><a class="btn btn-primary" href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a class="btn btn-primary" href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <!-- Frase e imagen de bienvenida -->
   <div class="welcome"> 
@@ -34,7 +40,7 @@
   
 
   <!-- Breve introduccion sobre mi y hobbies-->
-  <div>
+  <div class="about-me">
     <p class="text-center">I'm 22 years old and I live in Tigre, Buenos Aires. I'm studying Computer Engineering at
       Universidad de Buenos Aires.
       My main languages are Python and C++, I learned them in college so they're with wich I have more experience.
