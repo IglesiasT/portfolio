@@ -1,10 +1,16 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, send_file
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return render_template("index.html")
+
+@app.route("/download")
+def download():
+    resume_route = "static/tomas-iglesias.pdf"
+    
+    return send_file(resume_route, as_attachment=True)
 
 @app.route("/about-me")
 def about_me():
