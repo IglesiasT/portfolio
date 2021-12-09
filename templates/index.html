@@ -2,43 +2,53 @@
 
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- meta tags requeridas -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <!-- meta tags requeridas -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Tomas Iglesias</title>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <body>
-    <!-- Botones principales -->
-    <a class="btn btn-primary" href="{{ url_for('download') }}">Download resume</a>
-    <a class="btn btn-primary" href="{{ url_for('index') }}">Home</a>
-    <a class="btn btn-primary" href="{{ url_for('about_me') }}">About me</a>
-    <a class="btn btn-primary" href="{{ url_for('projects') }}">Projects</a>
-    <a class="btn btn-primary" href="{{ url_for('contact') }}">Contact</a>
+  <title>Tomas Iglesias</title>
+</head>
 
-    <h1>Hello I'm Tomas and I'm a developer</h1>
+<body>
+  <!-- Botones principales -->
+  <a class="btn btn-primary" href="{{ url_for('download') }}">Download resume</a>
+  <a class="btn btn-primary" href="{{ url_for('index') }}">Home</a>
+  <a class="btn btn-primary" href="{{ url_for('about_me') }}">About me</a>
+  <a class="btn btn-primary" href="{{ url_for('projects') }}">Projects</a>
+  <a class="btn btn-primary" href="{{ url_for('contact') }}">Contact</a>
 
-    <img src="static/img/face.jpg" class="rounded mx-auto d-block" alt="Picture">
+  <h1 class="display-1">Hello I'm Tomas and I'm a developer</h1>
 
-    <!-- Breve introduccion sobre mi -->
-    <p class="text-center">Breve introduccion sobre mi, edad donde vivo que hago etc</p>
+  <img src="static/img/face.jpg" class="rounded mx-auto d-block" alt="Picture">
 
-    <!-- JavaScript para varias funcionalidades-->
-    <!-- jQuery primero, luego Popper.js y Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <!-- Breve introduccion sobre mi -->
+  <p class="text-center">I'm 22 years old and I live in Tigre, Buenos Aires. I'm studying Computer Engineering at
+    Universidad de Buenos Aires</p>
 
-  <footer>
+  <!-- JavaScript para varias funcionalidades-->
+  <!-- jQuery primero, luego Popper.js y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
 
-    <!--128151 es el entity number del emoji del corazon, debe ir entre &#numero; para que el navegador lo entienda-->
-    <p>Made with &#128151; by Tomas Iglesias</p>
-  </footer>
+<footer>
+
+  <!--128151 es el entity number del emoji del corazon, debe ir entre &#numero; para que el navegador lo entienda-->
+  <p>Made with &#128151; by Tomas Iglesias</p>
+</footer>
+
 </html>
