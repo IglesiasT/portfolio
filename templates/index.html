@@ -19,10 +19,10 @@
 <body>
   <!-- Barra de navegacion con botones principales -->
   <header>
-    <nav>
-      <div class="buttons">
+    <nav class="fixed-top">
+      <div class="nav-buttons clearfix">
+        <a class="btn btn-secondary navbar-btn float-left" href="{{ url_for('download') }}">Download resume</a>
         <ul>
-          <li><a class="btn btn-primary" href="{{ url_for('download') }}">Download resume</a></li>
           <li><a class="btn btn-primary" href="{{ url_for('index') }}">Home</a></li>
           <li><a class="btn btn-primary" href="{{ url_for('about_me') }}">About me</a></li>
           <li><a class="btn btn-primary" href="{{ url_for('projects') }}">Projects</a></li>
